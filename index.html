@@ -22,6 +22,9 @@
             <nav>
                 <ul class="menu row">
                     <li class="menu__item">
+                        <a href="#" class="menu__link">ABOUT US</a>
+                    </li>
+                    <li class="menu__item">
                         <a href="#" class="menu__link">HOME</a>
                     </li>
                     <li class="menu__item">
@@ -33,31 +36,31 @@
                 </ul>
 
             </nav>
-            <div class="socials">
-                <ul class="social">
-                    <li class="social__icon">
-                        <a href="" class="social__link">
-                            <svg class="social__item">
-                                <use xlink:href="#facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__icon">
-                        <a href="" class="social__link">
-                            <svg class="social__item twitter">
-                                <use xlink:href="#twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__icon">
-                        <a href="" class="social__link">
-                            <svg class="social__item instagram">
-                                <use xlink:href="#instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+
+            <ul class="social">
+                <li class="social__icon">
+                    <a href="" class="social__link">
+                        <svg class="social__item">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social__icon">
+                    <a href="" class="social__link">
+                        <svg class="social__item twitter">
+                            <use xlink:href="#twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social__icon">
+                    <a href="" class="social__link">
+                        <svg class="social__item instagram">
+                            <use xlink:href="#instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
         </div>
     </header>
 
@@ -66,7 +69,7 @@
 
         <section class="hero">
             <div class="container">
-               <div class="ba-slider">
+             <div class="ba-slider">
                 <div class="slide">
                     <h1 class="slide-title">Simple & mordern</h1>
                     <p class="slide-sub-title">We make the world's beautiful every day</p>
@@ -91,37 +94,43 @@
 
         </div>
     </section>
-    <section class="services">
+    <section class="projects">
         <div class="container">
-            <div class="projects">
-                <div class="project1">
-                    <div class="projects__image">
+            <h1 class="project__title title">what we do</h1>
+            <div class="project">
+
+                <div class="project__image">
+                    <div class="image__wrapper">
                         <img src="img/project-01.jpg" alt="building">
                     </div>
-                    <div class="projects__information">
-                        <h4 class="projects__information--uptitle">One World</h4>
-                        <h3 class="projects__information--title">Trade Center</h3>
-                        <div class="projects__information--description">Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</div>
-                        <button class="button">more details</button>
-                        <div class="projects__information--location"><i class="fas fa-map-marker-alt"></i>  New York City, United States - 1776 feet</div>
-                    </div>
-
+                </div>
+                <div class="project__information">
+                    <h4 class="project__information--uptitle">One World</h4>
+                    <h3 class="project__information--title">Trade Center</h3>
+                    <p class="project__information--description">Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</p>
+                    <button class="button project__information--btn">more details</button>
+                    <p class="project__information--location"><i class="fas fa-map-marker-alt"></i>  New York City, United States - 1776 feet</p>
                 </div>
 
-                <div class="project2">
-                    <div class="projects__image">
+            </div>
+
+            <div class="project2">
+                <div class="project2__information">
+                    <h4 class="project__information--uptitle">International</h4>
+                    <h3 class="project__information--title">Commerce Centre</h3>
+                    <p class="project__information--description">Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.</p>
+                    <button class="button project__information--btn">more details</button>
+                    <p class="project__information--location">Hong Kong - 1588 Feet</p>
+                </div>
+
+                <div class="project__image">
+                    <div class="image__wrapper">
                         <img src="img/project-02.jpg" alt="building">
                     </div>
-                    <div class="projects__information">
-                        <h4 class="projects__information--uptitle">International</h4>
-                        <h3 class="projects__information--title">Commerce Centre</h3>
-                        <div class="projects__information--description">Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.</div>
-                        <button class="button">more details</button>
-                        <div class="projects__information--location">Hong Kong - 1588 Feet</div>
-                    </div>
-
                 </div>
+
             </div>
+
         </div>
 
     </section>
@@ -236,39 +245,73 @@
 
 
 <section class="gallery">
-    <h3 class="gallery__title"></h3>
+    ​
+    <div class="container">
+        <h1 class="gallery__title title">gallery</h1>
+        ​
+        <div class="gallery__container">
+            <div class="gallery__main gallery__image-wrapper">
+                <img src="img/gallery-01.jpg" alt="architecture" class="gallery__img">
+            </div>
+            ​
+            <div class="gallery__right">
+                <div class="gallery__right-top">
+                    <div class="gallery__right-top-1 gallery__image-wrapper">
+                        <img src="img/gallery-02.jpg" alt="architecture" class="gallery__img">
+                    </div>
+                    <div class="gallery__right-top-2 gallery__image-wrapper">
+                        <img src="img/gallery-03.jpg" alt="architecture" class="gallery__img">
+                    </div>
+                </div>
+                <div class="gallery__right-bottom">
+                    <div class="gallery__right-bottom-1 gallery__image-wrapper">
+                        <img src="img/gallery-04.jpg" alt="architecture" class="gallery__img">
+                    </div>
+                    <div class="gallery__right-bottom-2 gallery__image-wrapper">
+                        <img src="img/gallery-05.jpg" alt="architecture" class="gallery__img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        ​
+        <button class="gallery__btn button">see more</button>
+    </div>
 </section>
 
 <section class="information">
 
     <div id="map" class="information__map"></div>
     <div class="information__form">
-        <h3 class="information__title">get in touch</h3>
+        <h3 class="information__title title">get in touch</h3>
+
         <div class="information__details">
-            <p class="information__text">  91 Nolan Extensions Suite 670</p>
-            <p class="information__text">+001 356-868-2454</p>
-            <p class="information__text">gahuy93@gmail.com</p>
-            <p class="information__text">From 07:05AM to 19:30PM</p>
-        </div>
-        <div class="information__get"></div>
-        <form action="GET">
-         <input type="submit" value="Submit">
-         <label for="fname">Name</label>
-         <input type="text" id="fname" name="firstname" placeholder="Your name..">
-         <label for="email"><b>Email</b></label>
-         <input type="text" placeholder="Enter Email" name="email" required>
-          <button class="button">more details</button>
-     </form>
- </div>
+            <div class="information__read">
+                <p class="information__text">91 Nolan Extensions Suite 670</p>
+                <p class="information__text">+001 356-868-2454</p>
+                <p class="information__text">gahuy93@gmail.com</p>
+                <p class="information__text">From 07:05AM to 19:30PM</p>
+            </div>
+
+                <form class="information__get" action="">
 
 
- <div class="footer-main">
+                   <input type="text" class="information__input" id="fname" name="firstname" placeholder="Your name..">
+
+                   <input type="text" class="information__input" placeholder="Enter Email" name="email" required>
+                   <input type="submit" class="button" value="Submit">
+               </form>
+
+       </div>
+   </div>
+
+
+   <div class="footer-main">
     <div class="container">
         <div class="information__footer">
-           <a href="#" class="ba-logo">
+         <a href="#" class="ba-logo">
             <img src="img/logo.png" alt="Montisello">
         </a>
-    <div class="socials">
+
         <ul class="social">
             <li class="social__icon">
                 <a href="" class="social__link">
@@ -292,13 +335,14 @@
                 </a>
             </li>
         </ul>
+
+
     </div>
-    <p class="copyright">
-        Copyrights © 2017 Monticello Group
+     <p class="copyright">
+            Copyrights © 2017 Monticello Group
 
 
-    </p>
-</div>
+        </p>
 </div>
 </div>
 </section>
@@ -310,30 +354,30 @@
 </footer>
 
 <!-- SVG -->
-​
+
 <svg class="visually-hidden">
-    ​
+
     <symbol id="map-marker" fill-rule="evenodd" fill="currentColor" width="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path>
     </symbol>
-    ​
-    ​
-    ​
-    ​
+
+
+
+
     <symbol id="facebook" fill-rule="evenodd" fill="currentColor" width="9px" height="16px" viewBox="0 0 9 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <path d="M8.56351021,0.392840922 L8.56351021,2.74998659 L7.16172282,2.74998659 C6.06350723,2.74998659 5.85814984,3.27677293 5.85814984,4.03570241 L5.85814984,5.72320442 L8.47422439,5.72320442 L8.12600969,8.36606471 L5.85814984,8.36606471 L5.85814984,15.1428585 L3.12600373,15.1428585 L3.12600373,8.36606471 L0.849215297,8.36606471 L0.849215297,5.72320442 L3.12600373,5.72320442 L3.12600373,3.77677353 C3.12600373,1.51784226 4.50993395,0.285697937 6.52779349,0.285697937 C7.49208036,0.285697937 8.32243849,0.357126594 8.56351021,0.392840922 Z" id="path-1"></path>
     </symbol>
-    ​
-    ​
-    ​
+
+
+
     <symbol id="twitter" fill="currentColor" fill-rule="evenodd" width="14px" height="12px" viewBox="0 0 14 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <path d="M13.965303,1.92855942 C13.5724453,2.49998868 13.0813733,3.00891785 12.5188727,3.41963263 C12.5278012,3.54463278 12.5278012,3.66963293 12.5278012,3.79463308 C12.5278012,7.60713762 9.62601207,12 4.32243432,12 C2.6885038,12 1.17064485,11.5267852 -0.106142389,10.7053556 C0.126000745,10.7321413 0.349215297,10.7410699 0.590287013,10.7410699 C1.93850291,10.7410699 3.17957581,10.2857122 4.17064842,9.5089256 C2.90278977,9.48213986 1.8402885,8.65178172 1.47421664,7.50892322 C1.65278828,7.53570896 1.83135992,7.55356613 2.01886014,7.55356613 C2.27778902,7.55356613 2.5367179,7.5178518 2.77778962,7.45535173 C1.45635947,7.18749426 0.465286864,6.02677859 0.465286864,4.62499121 C0.465286864,4.61606263 0.465286864,4.59820546 0.465286864,4.58927688 C0.849215893,4.80356285 1.295645,4.93749158 1.76885985,4.95534874 C0.992073206,4.43749098 0.483144028,3.55356136 0.483144028,2.55356017 C0.483144028,2.01784524 0.626001341,1.52677323 0.876001639,1.09820129 C2.29564619,2.84820338 4.4295773,3.99106188 6.8224373,4.11606203 C6.77779439,3.90177606 6.75100864,3.67856151 6.75100864,3.45534696 C6.75100864,1.86605935 8.03672446,0.571414948 9.63494065,0.571414948 C10.4652988,0.571414948 11.2152997,0.919629648 11.742086,1.48213032 C12.3938725,1.35713017 13.0188733,1.11605845 13.5724453,0.785700917 C13.3581594,1.45534457 12.9028017,2.01784524 12.3045867,2.37498853 C12.8849445,2.31248845 13.4474452,2.15177397 13.965303,1.92855942 Z" id="path-1"></path>
     </symbol>
-    ​
+
     <symbol id="instagram" fill="currentColor" fill-rule="evenodd" width="14px" height="14px" viewBox="0 0 448 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
     </symbol>
-    ​
-    ​
+
+
 </svg>
 
 

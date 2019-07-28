@@ -2,7 +2,7 @@
 $mainColor: #444;
 $mainBackground: #fff;
 
-$container: 1170px;
+
 $colGups: 15px;
 
 
@@ -10,17 +10,17 @@ $textFont-size: 1rem;  // 16px
 $linkColor: blue;
 
 $breakpoints: (
-        xs: 0,
-        sm: 575px,
-        md: 768px,
-        lg: 1025px,
-        xl: 1200px,
-        xxl: 1440px
-);
+  xs: 0,
+  sm: 575px,
+  md: 768px,
+  lg: 1025px,
+  xl: 1200px,
+  xxl: 1440px
+  );
 
 
 
-  //===========  mixins start ===========//
+//===========  mixins start ===========//
 
 // columns
 $columns: 12;
@@ -50,13 +50,14 @@ $columns: 12;
   }
 }
 
+@import "slick.scss";
+@import "slick-theme.scss";
+
 
 .container{
-  max-width: $container;
-  width: 100%;
+  max-width: 1170px;
   margin: 0 auto;
 }
-
 
 // layout
 
@@ -79,8 +80,12 @@ $columns: 12;
 // main styles
 
 body{
-  font-family: sans-serif;
+  font-family: 'gotham-medium-webfont', sans-serif;
   font-size: 1rem;
+  max-width: 1600px;
+  margin: 0 auto;
+  position: relative;
+
 }
 
 //buttons
@@ -96,19 +101,320 @@ button, .button{
 }
 
 .button{
-
+  font-family: 'GothamBook';
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  text-align: center;
+  color: rgb(44, 64, 88);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 190px;
+  height: 50px;
+  border: solid 1px rgb(44, 64, 88);
+  background-color: white;
+  color: #323232;
+  text-decoration: none;
+  text-transform: uppercase;
+  &:hover, &:focus{
+    color: #fff;
+    background-color: rgb(44, 64, 88);
+  }
 }
 
 .ba-header{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  margin-top: 41px;
+
   &__container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
   }
 }
+.ba-logo{
 
+  font-size: 29.5px;
+  font-weight: bold;
+  line-height: 0.24;
+  letter-spacing: -2.95px;
+}
 .menu{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #fff;
+
+
+  &__item{
+    font-family: 'GothamBook';
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.57;
+    letter-spacing: normal;
+    text-align: left;
+
+  }
+}
+
+.social{
+  display: flex;
+  &__icon{
+    width: 40px;
+    height: 40px;
+    border: solid 1px #fff;
+    border-radius: 100%;
+    padding: 10px;
+    margin-left: 20px;
+  }
+  &__link{
+    color: #fff;
+  }
+  &__item{
+    width: 9px;
+    height: 16px;
+    text-align: center;
+    display: block;
+    margin: auto;
+  }
+}
+.twitter{
+  width: 14px;
+  height: 12px;
+}
+.instagram{
+  width: 14px;
+  height: 14px;
+}
+
+.hero{
+ display: flex;
+ min-height: 100vh;
+ align-items: center;
+ text-align: left;
+ color: #fff;
+ background: {
+  image: url(../img/hero.jpg);
+  size: cover;
+}
+}
+.ba-slider {
+
+}
+
+.slide{
+  &-title{
+    font-family: 'gothambold1';
+    font-size: 80px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 4px;
+    text-align: center;
+    color: white;
+  }
+  &-sub-title{
+    font-family: 'GothamBook';
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 5.4px;
+    text-align: center;
+  }
+}
+
+#map{
+  height: 700px;
+}
+
+.contact{
+  width: 1400px;
+  display: flex;
+
+  &__map{
+
+  }
+  &__form{
+   width: 50%;
+ }
+
+}
+.slick-dots {
+  list-style: none;
+  display: flex;
+  text-align: right;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  flex-direction: column;
+  position: absolute;
+  align-items: flex-end;
+  top: -30px;
+  right: -180px;
+  li{
+    margin-bottom: 40px;
+  }
+}
+
+.services{
+  &__title{
+
+  }
+}
+.projects{
+  &__information{
+    --uptitle{}
+    --title{}
+    --description{
+      font-family: OpenSans;
+      font-size: 18px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.67;
+      letter-spacing: normal;
+      text-align: left;
+      color: rgb(75, 85, 98);
+    }
+  }
+}
+
+.news-general{
+  font-family: 'gotham-medium-webfont';
+  font-size: 44px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+  margin: 180px auto 100px auto;
+  text-transform: uppercase;
+}
+.news{
+  wigth: 370px;
+  min-height: 514px;
+  background-color: #FFF;
+  margin-right: 30px;
+  height: fit-content;
+  &__content{
+    padding: 30px 30px 30px 20px;
+  }
+
+  &__title{
+    font-family: 'gothambold1';
+    font-size: 22px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.55;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgb(44, 64, 88);
+    padding-bottom: 20px;
+    text-transform: uppercase;
+  }
+  &__paragraph{
+    font-family: OpenSans;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgb(75, 85, 98);
+    padding-bottom: 35px;
+  }
+  &__avatar{
+    display: flex;
+
+  }
+  &__avatar-details{
+
+  }
+  &__avatar-img{
+    border-radius: 50%;
+    padding-right: 20px;
+  }
+
+
+  &__avatar-name{
+    font-family: 'GothamBook';
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgb(44, 64, 88);
+    text-transform: uppercase;
+  }
+  &__avatar-date{
+    font-family: 'GothamBook';
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.57;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgb(85, 183, 255);
+  }
+}
+.multiple-items{
+  padding-bottom: 200px;
+}
+.breaking-news{
+ display: flex;
+ min-height: 100vh;
+ align-items: center;
+ text-align: left;
+ color: #fff;
+ background: {
+  image: url(../img/hero2.jpg);
+  size: cover;
+}
+}
+
+
+.information{
+
+&__form{
+  height: 450px;
+  width: 770px;
+  background-color: #FFF;
+}
+
+  &__footer{
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.footer-main{
+ display: flex;
+ height: 524px;
+ align-items: center;
+ text-align: left;
+ color: #fff;
+ background: {
+  image: url(../img/footer.jpg);
+  size: cover;
+}
 }
